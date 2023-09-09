@@ -9,7 +9,7 @@ steps:
 - task: katalonTask@1
   inputs:
     version: '8.5.0'
-    executeArgs: '-testSuiteCollectionPath="Test Suites/healthcare-tests - TS_RegressionTestCollection" -apiKey="a5730b86-4df2-44fe-945a-d873c7d4065e" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -browserType="Chrome"'
+    executeArgs: '-testSuiteCollectionPath="Test Suites/healthcare-tests - TS_RegressionTestCollection" -apiKey="9d33f481-13b7-4883-bf80-7bbc1f6391ae" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -browserType="Chrome"'
     
 - task: PublishPipelineArtifact@0
   inputs:
