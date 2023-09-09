@@ -3,14 +3,13 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'windows-latest'
 
 steps:
 - task: katalonTask@1
   inputs:
     version: '8.5.0'
     executeArgs: '-testSuiteCollectionPath="Test Suites/healthcare-tests - TS_RegressionTestCollection" -apiKey="a5730b86-4df2-44fe-945a-d873c7d4065e" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -browserType="Chrome"'
-    xvfbConfiguration: '-a -n 0 -s "-screen 0 1024x768x24"'
     
 - task: PublishPipelineArtifact@0
   inputs:
